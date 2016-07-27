@@ -1,0 +1,23 @@
+{
+  "name": "@lyfnsmile/calendar-directive",
+  "version": "1.0.0",
+  "description": "angular-calendar calendar",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lyfnsmile/calendar-directive.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lyfnsmile/calendar-directive/issues"
+  },
+  "homepage": "https://github.com/lyfnsmile/calendar-directive#readme"
+}
