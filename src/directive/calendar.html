@@ -1,0 +1,38 @@
+<table id="tblMnth" class="caltable table-condensed">
+    <tr>
+        <td colspan="2" class="headLeft">
+            <div class="center">
+                <select ng-show="showMonthSelection" class="form-control input-xs" ng-model="month" ng-options="mth.no as mth.name for mth in monthObj" ng-change="changeMonth(month)" />
+            </div>
+        </td>
+        <td colspan="3">
+            <div class="center">
+                {{year}}
+            </div>
+        </td>
+        <td colspan="2" class="headRight">
+            <div class="btn-group pull-right">
+                <button ng-disabled="navigation" class="btn btn-default" type="button" ng-click="prev()">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </button>
+                <button ng-disabled="navigation" class="btn btn-default" type="button" ng-click="next()">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </button>
+            </div>
+        </td>
+    </tr>
+    <tr class="week">
+        <th>日</th>
+        <th>一</th>
+        <th>二</th>
+        <th>三</th>
+        <th>四</th>
+        <th>五</th>
+        <th>六</th>
+    </tr>
+    <tr ng-repeat="week in weeks">
+        <td ng-class="text-right" id='{{day}}' class="cursor-hand" ng-repeat="day in week track by $index">
+            <span  ng-click="selectDate(day)">{{day}}</span>
+        </td>
+    </tr>
+</table>

@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Angular calendar-directive</title>
+    <meta charset="UTF-8">
+    <title>Angular calendar-directive</title>
+    <script type="text/javascript" src="../bower_components/jquery/jquery.js"></script>
 </head>
-<body>
-	
+
+<body ng-controller="myController">
+    <h2 class="title">日历指令</h2>
+    <div class="col-lg-3">
+        <my-calendar date="date" on-select="selected(dt)" config="config1"></my-calendar>
+    </div>
+    <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+    <script type="text/javascript" src="./directive/calendar.directive.js"></script>
 </body>
+
 </html>

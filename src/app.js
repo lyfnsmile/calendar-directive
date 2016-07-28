@@ -1,4 +1,4 @@
-angular.module('myApp', ['calendarControl'])
+angular.module('myApp', [])
     .controller('myController', function($scope) {
         $scope.selected = function(dt) {
             console.log(dt);
